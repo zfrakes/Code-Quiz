@@ -7,9 +7,99 @@
     <title>Code-Quiz(Pop Culture from 2010's)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="questions.js" ></script>
+    <script> 
+       var questionNumber = 0;
+       var countdown = questions.length * 15;
+       var interval;
 
+       function startcountdown(){
+            document.getElementById('timer').innerHTML = "Time Remaining: "+countdown+" seconds";
+            interval = setInterval(function(){
+                countdown--;
+                document.getElementById('timer').innerHTML = "Time Remaining: "+countdown+" seconds";
+            },1000);
+       }
+
+        function testanswer(questionNum, userAnswer){
+            console.log(questionNum, userAnswer);
+
+            if(questions[questionNum].answer === userAnswer){
+                document.getElementById('userNotif').innerHTML = "Correct Answer";
+            }else{
+                countdown = countdown - 10;
+                document.getElementById('userNotif').innerHTML = "Wrong Answer";
+            }
+            setTimeout(function(){
+                incrementquestion();
+            },1000)
+        }
+
+    	function getChoices(questionNumber){
+        	var questionChoices = questions[questionNumber].choices;
+            var response = "";
+            for(var i=0; i<questionChoices.length; i++){
+            	response = response + "<li><a onclick='testanswer("+questionNumber+",\""+ questionChoices[i]+"\")'>"+questionChoices[i]+"</a></li>"
+            }
+            return response;
+        }
+
+        function renderscoreboard(){
+            debugger;
+            clearInterval(interval);
+            document.getElementById('timer').innerHTML = "";
+            document.getElementById('quiz').innerHTML = "<div>"
+            +"<div noclick='renderhighscores()'>View Highscores</div>"
+            +"Score: "+countdown
+            +"<input type='text' id='username' placeholder='Enter Initials...'/>"
+            +"<input onclick='submitscore()' type='submit' />"
+        +"</div>"
+
+        }
+
+        function submitscore(){
+            debugger;
+            var initials = document.getElementById('username').value;
+            localStorage.setItem(initials, countdown);
+        }
+
+        function incrementquestion(){
+            debugger;
+            questionNumber++;
+            if(questionNumber > (questions.length-1)){
+                renderscoreboard();
+            }else{
+                renderquestion();
+            }
+        }
+
+
+        function renderhighscores(){
+            
+        }
+
+    	function renderquestion(){
+        	var choices = getChoices(questionNumber);
+        
+            document.getElementById('quiz').innerHTML = "<div>"
+  				+"<div>"+questions[questionNumber].title+"</div>"
+                +"<ul>"
+					+choices              
+                +"</ul>"
+              +"</div>"
+              +"<div id='userNotif'></div>"
+          
+        }
+        
+        function startquiz(){
+            startcountdown();
+        	renderquestion();
+        }
+       
+    </script>
 </head>
 <body>
+    <div id='timer'></div>
      <div id="quiz">
          <div id="quiz-header">
             <h1>2010's Pop Culture Quiz Challenge </h1>
@@ -17,9 +107,17 @@
                     Keep in mind that incorrect answers will pealize your scoretime by ten seconds! </p>
                 </div>
                 <div id="quiz-start-screen">
-                  <p><a href="#" class="btn btn-secondary id="quiz-start-btn" class="quiz-button">Start</a></p>
+                  <p><a class="btn btn-secondary btn-lg"id="quiz-start-btn" class="quiz-button" onclick='startquiz()'>Start</a></p>
                 </div>
               </div>
+              <div id= "timer">
+                  <div
+          
+  
+  
+  
+  
     
-</body>
+    
+                  ></body>
 </html>
