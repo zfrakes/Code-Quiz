@@ -20,7 +20,7 @@ var questions = [
       answer: "Cardi B"
     },
     {
-      title: "What year was the women's march created?",
+      title: "What year was the Women's March created?",
       choices: ["2016", "2018", "2017", "2015"],
       answer: "2017"
     }

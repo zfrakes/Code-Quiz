@@ -1,10 +1,19 @@
-h1{
-    color:plum;
+h1 {
+    color: plum;
     text-align: center;
-}
-#quiz-start-screen{
+  }
+  #quiz-start-screen {
     text-align: center;
-}
-.faded{
+  }
+  .faded {
     text-align: center;
-}
+  }
+  .answer {
+    background: lightgrey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    max-width: 300px;
+  }
+  
