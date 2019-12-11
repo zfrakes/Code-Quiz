@@ -16,7 +16,7 @@ h1 {
     color: white;
     max-width: 150px;
     text-align: center;
-    margin: auto;
+    margin: 2rem auto;
   }
   #initials{
     box-sizing: border-box;
