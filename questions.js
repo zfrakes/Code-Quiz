@@ -11,7 +11,7 @@ var questions = [
     },
     {
       title: "Which social media platform was launched in 2010?",
-      choices: ["Instagram", "Facebook", "twitter", "Snapchat"],
+      choices: ["Instagram", "Facebook", "Twitter", "Snapchat"],
       answer: "Instagram"
     },
     {

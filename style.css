@@ -14,6 +14,22 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     color: white;
-    max-width: 300px;
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
   }
-  
+  #initials{
+    box-sizing: border-box;
+    text-align: center
+   
+  }
+  h2{
+    text-align: center;
+    color:plum;
+    font-size: 100px;
+  }
+#quiz{
+    text-align: center;
+    color: plum;
+    font-size: 30px;
+}
