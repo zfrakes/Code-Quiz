@@ -1,6 +1,4 @@
-body{
 
-}
 header {
     background-color: plum;
     text-align: center;
@@ -8,23 +6,25 @@ header {
     font-size: 60px;
     border: 2px solid black;
     border-radius: 8px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
   }
   #quiz-start-screen {
     text-align: center;
   }
   .faded {
     text-align: center;
-    color: #abc2e8;
+    background-color:#abc2e8;
+    color: black;
     font-size: 25px;
     font-family: 'Pangolin', cursive;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-style: dotted;
   }
   .answer {
     background: lightgrey;
@@ -51,4 +51,11 @@ header {
     color: plum;
     font-size: 30px;
   
+}
+#quiz-header{
+  background-image: url("./images/Pop.png");
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 500px;
+  padding-left: 80px;
 }
