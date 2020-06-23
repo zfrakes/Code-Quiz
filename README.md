@@ -1,7 +1,7 @@
 # Code-Quiz(2020's Pop Culture)
 
 ## About/ Description
-As we end the decade of the 2010s, I thought it would be a great idea to test your knowledge on popular topics/events that happen with these last ten years. This application is a timed quiz, which features five multiple-choice questions on subjects from 2010’s pop culture.
+The first 6 months of 2020 had be one for the books. I thought it would be a great idea to test our knowledge on popular topics/events that has happen so far this year. This application is a timed quiz, which features five multiple-choice questions on subjects from 2010’s pop culture.
 
 Here's how it works, the user must press start to begin the quiz. Once the quiz starts, a countdown timer will begin at 75 seconds, and the first question will appear. If the user gets the answer wrong, 10 seconds will deduct from the timer, and this will occur with every question. Once the user has completed the quiz, the timer will stop, and the user will be allowed to input their initials onto a high score list. Scores are calculated by the number of seconds it took the user to answer all the questions. The user can take the quiz as many times are they wish.
 
