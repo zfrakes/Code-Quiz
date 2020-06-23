@@ -13,7 +13,7 @@ From the layout to the different languages used, this application has all the ke
 * CSS
 * JavaScript
 
-## Launch
+## Link
 To lauch this application click or copy and paste the following link in your browser.
 
 https://zfrakes.github.io/Code-Quiz/
