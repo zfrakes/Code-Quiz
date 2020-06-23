@@ -2,10 +2,16 @@ body{
 
 }
 header {
-    color: plum;
+    background-color: plum;
     text-align: center;
     font-family: 'Pangolin', cursive;
     font-size: 60px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
   }
   #quiz-start-screen {
     text-align: center;
@@ -15,6 +21,10 @@ header {
     color: #abc2e8;
     font-size: 25px;
     font-family: 'Pangolin', cursive;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
   }
   .answer {
     background: lightgrey;
