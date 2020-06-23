@@ -59,3 +59,10 @@ header {
   padding-bottom: 500px;
   padding-left: 80px;
 }
+#quiz-start-btn{
+background-color:lightgray;
+font-size:75px;
+font-family: 'Pangolin', cursive;
+border: 2px solid white;
+border-radius: 8px;
+}
