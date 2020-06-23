@@ -28,13 +28,13 @@ header {
   }
   .answer {
     background: plum;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
     color: white;
-    max-width: 200px;
-    text-align: center;
-    margin: 2rem auto;
+    max-width: 300px;
+  
+    margin: 5rem auto;
   }
   #initials{
     box-sizing: border-box;
