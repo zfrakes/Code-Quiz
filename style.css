@@ -1,12 +1,20 @@
-h1 {
+body{
+
+}
+header {
     color: plum;
     text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;
   }
   #quiz-start-screen {
     text-align: center;
   }
   .faded {
     text-align: center;
+    color: #abc2e8;
+    font-size: 25px;
+    font-family: 'Pangolin', cursive;
   }
   .answer {
     background: lightgrey;
@@ -25,11 +33,12 @@ h1 {
   }
   h2{
     text-align: center;
-    color:plum;
+    color:lightskyblue;
     font-size: 100px;
   }
 #quiz{
     text-align: center;
     color: plum;
     font-size: 30px;
+  
 }
